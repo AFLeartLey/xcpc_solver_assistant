@@ -1,0 +1,24 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.uv-cache/
+uv.lock
+
+# 对拍沙箱产物（保留目录结构，忽略中间件与编译产物）
+workspace/*
+!workspace/.gitkeep
+
+# 运行时记忆属于本地数据：目录结构保留，内容不提交
+chat_memory/session.jsonl
+chat_memory/PROFILE.json
+chat_memory/MEMORY.md
+chat_memory/logs/
+
+# 评测产物
+evals/.eval_memory/
+
+# 规划中间产物
+req_final.md
+requirement.md
+prd_implementation.md
